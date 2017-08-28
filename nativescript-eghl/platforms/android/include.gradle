@@ -1,0 +1,4 @@
+//optional elements
+dependencies {
+    // compile groupName:pluginName:ver
+}
