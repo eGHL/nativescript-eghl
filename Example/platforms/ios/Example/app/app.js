@@ -6,7 +6,7 @@ purpose of the file is to pass control to the app’s first module.
 
 require("./bundle-config");
 var application = require("application");
-
+ // __enableVerboseLogging() ;
 global.carts = {
 	totalAmounts:10,
 	currency:"MYR",

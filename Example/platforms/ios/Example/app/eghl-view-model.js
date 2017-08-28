@@ -18,7 +18,15 @@ function eghlViewModel(args){
 				}
 			});
 		} else if (args.object.android) {
-			android_sale(args,this);
+			var app = require("application");
+
+			if (!viewModel.eghlpay) {
+				viewModel.eghlpay = com.eghl.sdk.EGHL.getInstance();
+
+				//onActivityResult
+				app.android.on("activityResult", android_onActivityResult);
+			}
+			android_sale(app,args,this);
 		}
 	};
 
@@ -49,15 +57,27 @@ function eghlViewModel(args){
 
 exports.eghlViewModel = eghlViewModel;
 
-function transactionResult(resultData) {
-	console.log(resultData);
+function transactionResult(resultData, isAndroid) {
 	var keys = [ "Amount", "AuthCode", "BankRefNo", "CardExp", "CardHolder", "CardNoMask", "CardType", "CurrencyCode", "EPPMonth", "EPP_YN", "HashValue", "HashValue2", "IssuingBank", "OrderNumber", "PromoCode", "PromoOriAmt", "Param6", "Param7", "PaymentID", "PymtMethod", "QueryDesc", "ServiceID", "SessionID", "SettleTAID", "TID", "TotalRefundAmount", "Token", "TokenType", "TransactionType", "TxnExists", "TxnID", "TxnMessage", "TxnStatus", "ReqToken", "PairingToken", "PreCheckoutId", "Cards", "mpLightboxError"];
 
-	console.log(contentsAsStrings(keys, resultData));
-	dialogs.alert({
-		message: contentsAsStrings(keys, resultData),
-		okButtonText: "Ok",
-	})
+	if (isAndroid) {
+		var __message = contentsAsStrings(keys, resultData);
+		var timeout = setTimeout(function(){
+
+			dialogs.alert({
+				title:"Transction result",
+				message: __message,
+				okButtonText: "Ok"
+			});
+		},100);
+	} else {
+		dialogs.alert({
+			title:"Transction result",
+			message: contentsAsStrings(keys, resultData),
+			okButtonText: "Ok"
+		});
+	}
+
 }
 
 
@@ -96,20 +116,13 @@ function contentsAsStrings(keys, obj){
 	return dispMessage;
 }
 
-
 /**
  * Android
  */
-function android_sale (args,viewModel) {
-	var app = require("application");
-	
+function android_sale (app,args,viewModel) {
 	var EGHL = com.eghl.sdk.EGHL;
 	var PaymentParams = com.eghl.sdk.params.PaymentParams;
 
-	var eghlpay = EGHL.getInstance();
-
-
-    var paymentID = eghlpay.generateId("SIT");
     var payment = new PaymentParams();
 
     var parameters = new PaymentParams.Builder();
@@ -137,43 +150,33 @@ function android_sale (args,viewModel) {
 	parameters.setOrderNumber(global.carts.referenceNo); // can be duplicate
 
     var paymentParams = parameters.build();
-    // console.log("PaymentParams"+paymentParams);
+    // console.log("PaymentParams:"+paymentParams);
 
     var activity = app.android.foregroundActivity || app.android.startActivity;
 
-    // console.log("Exception========================================");
     //ExecutePayment
-    eghlpay.executePayment(paymentParams,activity);
+    viewModel.eghlpay.executePayment(paymentParams,activity);
 
-    //onActivityResult
-    app.android.on("activityResult", function (args) {
-        var requestCode = args.requestCode;
-        var resultCode = args.resultCode;
-        var data = args.intent;
-        
-        if (requestCode == EGHL.REQUEST_PAYMENT) {
-        	transactionResult(JSON.parse(data.getStringExtra(EGHL.RAW_RESPONSE)));
-            // switch (resultCode) {
-            //     case EGHL.TRANSACTION_SUCCESS:
-            //     console.log("onActivityResult: payment successful");
-            //     console.log("status" + data.getStringExtra(EGHL.TXN_MESSAGE));
-            //     console.log("message" + data.getStringExtra(EGHL.TXN_MESSAGE));
-            //     console.log("raw" + data.getStringExtra(EGHL.RAW_RESPONSE));
-
-            //     break;
-            //     case EGHL.TRANSACTION_FAILED:
-            //     console.log("onActivityResult: payment failure");
-            //     console.log("raw" + data.getStringExtra(EGHL.RAW_RESPONSE));
-
-            //     break;
-            //     default:
-            //     console.log("onActivityResult: " + resultCode);
-            //     break;
-            // }
-        } 
-    });		
 }
 
+function android_onActivityResult (args) {
+	var EGHL = com.eghl.sdk.EGHL;
+
+    var requestCode = args.requestCode;
+    var resultCode = args.resultCode;
+    var data = args.intent;
+    
+    if (requestCode == EGHL.REQUEST_PAYMENT) {
+    	try{
+    		transactionResult(JSON.parse(data.getStringExtra(EGHL.RAW_RESPONSE)), true);
+    	} catch (e) {
+    		transactionResult({
+    			TxnStatus:resultCode,
+    			TxnMessage:data.getStringExtra(EGHL.TXN_MESSAGE) || ""
+    		}, true);
+    	}
+    } 
+}
 
 /**
  * iOS
@@ -183,7 +186,7 @@ var frameModule = require("ui/frame");
 function ios_sale (args,viewModel) {
 	var page = args.object;
 
-	// Add eghl to view
+	// Add eghl(view) to current view
     var stackLayout = page.getViewById("paymentView");
     viewModel.eghlpay.frame = {origin: {x:0, y:0}, size: {width: stackLayout.ios.superview.frame.size.width, height:stackLayout.ios.superview.frame.size.height}};
 
@@ -224,14 +227,6 @@ function ios_sale (args,viewModel) {
 function ios_successBlock (responseData) {
 	ios_toMainPage();
 	transactionResult(responseData);
-
-	// var keys = [ "Amount", "AuthCode", "BankRefNo", "CardExp", "CardHolder", "CardNoMask", "CardType", "CurrencyCode", "EPPMonth", "EPP_YN", "HashValue", "HashValue2", "IssuingBank", "OrderNumber", "PromoCode", "PromoOriAmt", "Param6", "Param7", "PaymentID", "PymtMethod", "QueryDesc", "ServiceID", "SessionID", "SettleTAID", "TID", "TotalRefundAmount", "Token", "TokenType", "TransactionType", "TxnExists", "TxnID", "TxnMessage", "TxnStatus", "ReqToken", "PairingToken", "PreCheckoutId", "Cards", "mpLightboxError"];
-	// dialogs.alert({
-	// 	message: contentsAsStrings(keys, responseData),
-	// 	okButtonText: "Ok",
-	// }).then(function () {
-	// 	ios_toMainPage();
-	// });
 }
 
 function ios_failedBlock (errorCode, errorData, error){
