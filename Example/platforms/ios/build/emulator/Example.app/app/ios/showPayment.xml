@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="paymentpage" loaded="loaded">
+	<Page.actionBar>
+		<ActionBar title="eGHL">
+			<NavigationButton visibility="collapse"/>
+			<ActionItem text="Cancel" ios.position="left" tap="onCancelBtnTap" />
+		</ActionBar>
+	</Page.actionBar>
+    <StackLayout class="p-20 " id="paymentView">
+
+        
+    </StackLayout>
+</Page>

@@ -1,0 +1,51 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "../nativescript-eghl",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "../nativescript-eghl",
+        "spec": "/Users/arifjusoh/Documents/Github/nativescript-eghl/nativescript-eghl",
+        "type": "directory"
+      },
+      "/Users/arifjusoh/Documents/Github/nativescript-eghl/Example"
+    ]
+  ],
+  "_from": "../nativescript-eghl",
+  "_id": "nativescript-eghl@0.0.1",
+  "_inCache": true,
+  "_location": "/nativescript-eghl",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "../nativescript-eghl",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "../nativescript-eghl",
+    "spec": "/Users/arifjusoh/Documents/Github/nativescript-eghl/nativescript-eghl",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../nativescript-eghl",
+  "_shasum": "4276793029cf986e92f7b8b2f7709c2f088c7d1e",
+  "_shrinkwrap": null,
+  "_spec": "../nativescript-eghl",
+  "_where": "/Users/arifjusoh/Documents/Github/nativescript-eghl/Example",
+  "dependencies": {},
+  "devDependencies": {},
+  "name": "nativescript-eghl",
+  "nativescript": {
+    "platforms": {
+      "ios": "1.4.1",
+      "android": "1.4.1"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "0.0.1"
+}

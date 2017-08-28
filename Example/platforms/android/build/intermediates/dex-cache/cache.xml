@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-media-compat-25.3.1_eeb49129a2f7a5d0db17810b652dfb03e50440d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-animated-vector-drawable-25.3.1_87df74510d1b4ace82c6615d5c0111554dd48134.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-fragment-25.3.1_c713f5d0fb62fdb50e601c170b5fd33ae247f909.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-core-utils-25.3.1_bf849c1871e9aff69f883b3575db20b14570447e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-vector-drawable-25.3.1_bf5e52640b0fa249a1651d344e5b56777711c4ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/Example/runtime/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="30b97ea5d6274e02330dcc69943087778363c172">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/Example-runtime-unspecified_3eb4fd250d19dae81a1a4ab588001b1fd8577d42.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-v4-25.3.1_352f4298ee379bd7ac938124ad50b974b7697c96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-compat-25.3.1_aac63e4123850c71c53e12e85312491d243a74ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/eghl-sdk-v2.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="724a12e19ae3828d39ed4d3dfc459acaf60f395c">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/intermediates-exploded-aar-eghl-sdk-v2.2.6_f977b0fa1ad484ac837a195d4a027246f60f112e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-design-25.3.1_e7980caec15b25605960b48f41bab4c146143e68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/widgets-release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ada15dd7aad50793dcd67b281a8eb06e80007500">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/intermediates-exploded-aar-widgets-release_4576fa18dbf1d8c7a616f2ee3b74435683fc593c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/Example/runtime/unspecified/jars/libs/binding-generator.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a3e74f5f1ebe12c7cfa6591158ef298c95a5275f">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/binding-generator_86ba8a7d18725c211e82d3cd2b0bb7725f50563e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-transition-25.3.1_d8402cd32c40d6158497edbd7baebf16dbd61f02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/support-annotations-25.3.1_c42c94100d645e2b53bdae3976668576498d4891.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-recyclerview-v7-25.3.1_7f18c81a943c4242ee4344700fe0e64ab0070d90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-support-core-ui-25.3.1_b315f98166e99f50d0e32d9468d06cd4ae0140ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/arifjusoh/Documents/Github/nativescript-eghl/Example/platforms/android/build/intermediates/pre-dexed/F0/debug/com.android.support-appcompat-v7-25.3.1_509d541d8c1192918ce08acd6ff7cf7aa0af1dc3.jar" />
+    </item>
+
+</items>
