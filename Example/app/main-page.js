@@ -31,14 +31,6 @@ function onNavigatingTo(args) {
     https://docs.nativescript.org/core-concepts/data-binding.
     */
     page.bindingContext = eghlViewModel();
-    
-    // var dialogs = require("ui/dialogs");
-
-    // dialogs.alert({
-    //     title:"title",
-    //     message:"test alert content",
-    //     okButtonText: "Ok"
-    // });
 }
 
 /*
