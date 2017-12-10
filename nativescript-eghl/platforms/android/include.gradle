@@ -1,4 +1,18 @@
+/* Issue build.gradle String index out of range: -1
+ * https://github.com/NativeScript/android-runtime/issues/542#issuecomment-241647337
+ */
+android {
+    productFlavors {
+        "nativescript-eghl" {
+            dimension "nativescript-eghl"
+        }
+    }
+}
+
 //optional elements
 dependencies {
     // compile groupName:pluginName:ver
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'    
 }
