@@ -90,7 +90,7 @@ function setupPaymentConfiguration(viewModel){
 	viewModel.languageCode = "EN"; // MS
 
 	viewModel.returnURL = "SDK";// Just put any dummy string, cannot be empty
-	// viewModel.callbackURLL = @"https://abc.com/callback
+    viewModel.callbackURLL = "https://abc.com/callback"
 }
 
 function eGHLAmountFormat(x) {
@@ -138,7 +138,7 @@ function android_sale (app,args,viewModel) {
 	parameters.setMerchantName(viewModel.merchantName);
 	parameters.setLanguageCode(viewModel.languageCode);
 	parameters.setMerchantReturnUrl(viewModel.returnURL);
-	// parameters.setMerchantCallbackUrl(viewModel.callbackURLL;
+	// parameters.setMerchantCallbackUrl(viewModel.callbackURLL);
 
 	parameters.setCustName(global.user.fullname);
 	parameters.setCustEmail(global.user.email);
