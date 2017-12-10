@@ -1,1 +1,17 @@
+# Mac OS File system
 .DS_Store
+
+platforms
+hooks
+node_modules
+lib
+debugger
+dist
+report
+
+app/**/*.map
+app/**/*.js
+
+**/*.log
+tags
+
